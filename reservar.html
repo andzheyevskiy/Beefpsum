@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Ipsum</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+</head>
+
+<body>
+
+    <!-- <NavBar> -->
+    <nav class="navbar">
+        <a href="./index.html"><img src="./assets/img/logo.webp" alt="Logo Corporativo" id="logo"></a>
+        <input type="checkbox" name="displayNav" id="displayNav">
+        <button id="boton-menu"><label for="displayNav"></label></button>
+        <ul id="lista-menu">
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./carta.html">Carta</a></li>
+            <li><a href="./localization.html">Donde estamos</a></li>
+            <li><a href="./reservar.html">Reservar</a></li>
+            <li><a href="#footer">Contacto</a></li>
+        </ul>
+    </nav>
+    <!-- </NavBar> -->
+
+    <!-- <Main> -->
+    <main>
+
+        <!-- <Reservar> -->
+        <section class="reservar">
+            <form action="#">
+                <h3>Reservar en Restaurante Beefpsum</h3>
+                <p>Plaza Garellano 14, Bilbao</p>
+                <a href="./carta.html">Consulte nuestra carta.</a>
+                <label for="adultos"><i class="fa-solid fa-person"></i> Adultos</label>
+                <input type="number" name="adultos" id="adultos" value="1" required>
+                <label for="ninos"><i class="fa-solid fa-child"></i> Niños</label>
+                <input type="number" name="ninos" id="ninos" value="0" required>
+                <label for="date">Fecha:</label>
+                <input type="date" name="date" id="date" required>
+                <fieldset>
+                    <input type="radio" name="hora" id="dia" value="dia" checked><label for="dia">
+                        <p>Comida</p>
+                        <p>13:30 - 16:15</p>
+                    </label>
+                    <input type="radio" name="hora" id="noche" value="noche"><label for="noche">
+                        <p>Cena</p>
+                        <p>20:30 - 23:15</p>
+                    </label>
+                </fieldset>
+                <button type="submit">Continuar</button>
+            </form>
+            <p>Llámenos al <a href="tel:34999666999">999 666 999</a> si tiene cualquier duda</p>
+        </section>
+        <!-- </Reservar> -->
+    </main>
+    <!-- </Main> -->
+
+    <!-- <Footer> -->
+    <footer id="footer">
+        <div class="contenedor">
+            <div class="imagen">
+                <img src="./assets/img/beef.svg" alt="Logo Beefpsum">
+            </div>
+            <div class="contenedorFooter">
+                <div>
+                    <h3>Contacto</h3>
+                    <p><a class="tel" href="tel:34999666999">999 666 999</a></p>
+                    <p><a href="mailto:correo@correo.com">correo@correo.com</a></p>
+                    <h3>Direccion</h3>
+                    <p>Plaza Garellano 14,</p>
+                    <p>Bilbao, 48013</p>
+                    <h3>Siguenos</h3>
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3>Horarios</h3>
+                    <h4>Lunes:</h4>
+                    <p class="horas">Cerrado</p>
+                    <h4>Martes-Sabado</h4>
+                    <p class="horas">13:30-16:30</p>
+                    <p class="horas">20:30-23:30</p>
+                    <h4>Domingo</h4>
+                    <p class="horas">13:30-17:00</p>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="">Condiciones de Uso</a></li>
+                <li><a href="">Política de Privacidad</a></li>
+                <li><a href="">Política de Cookies</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <!-- </Footer> -->
+
+
+    <script src="./assets/js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,263 @@
+[
+    {
+        "nombre": "Entrantes",
+        "descripcion": "",
+        "platos": [
+    {
+        "nombre": "TACOS CARNÍVOROS",
+        "descripcion": "Carne ahumada, guacamole, jalapeños, criolla, rocoto. 2 unid.",
+        "precio": "8"
+    },
+    {
+        "nombre": "QUESADILLAS CARNÍVORAS",
+        "descripcion": "Mix de quesos y carne ahumada. 2 unid.",
+        "precio": "10"
+    },
+    {
+        "nombre": "ENSALADA DE PATATAS",
+        "descripcion": "Patatas, huevos, cebolla, pepinillos, mayonesa, mostaza, sal, pimienta, perejil, apio, zanahoria, guisantes, jamón York.",
+        "precio": "11"
+    },
+    {
+        "nombre": "NACHOS",
+        "descripcion": "Acompañado de pulled pork, salsa cheddar, mozzarella, chalaquita, guacamole, crema agria, jalapeños y rocoto picante.",
+        "precio": "10"
+    },
+    {
+        "nombre": "PATATAS FRITAS NATURALES",
+        "descripcion": "Clásicas patatas fritas crujientes servidas al momento.",
+        "precio": "6"
+    },
+    {
+        "nombre": "PATATAS QUESO BACON",
+        "descripcion": "Patatas fritas cubiertas con queso derretido y crujiente bacon.",
+        "precio": "8"
+    },
+    {
+        "nombre": "ALITAS CHIFERAS CRUJIENTES",
+        "descripcion": "Alitas de pollo crujientes con un toque de salsa chifera.",
+        "precio": "8"
+    },
+    {
+        "nombre": "TEQUEÑOS 6UNID",
+        "descripcion": "Crujientes tequeños rellenos de queso, perfectos para compartir.",
+        "precio": "8"
+    },
+    {
+        "nombre": "TIRAS DE POLLO CRUJIENTES",
+        "descripcion": "Jugosas tiras de pollo rebozadas y fritas hasta quedar crujientes.",
+        "precio": "8"
+    },
+    {
+        "nombre": "CHORIZO CRIOLLO 2UNID",
+        "descripcion": "Dos unidades de chorizo criollo a la parrilla.",
+        "precio": "8"
+    },
+    {
+        "nombre": "ENSALADA VERDE",
+        "descripcion": "Lechuga, tomate y cebolla.",
+        "precio": "7"
+    },
+    {
+        "nombre": "ENSALADA CÉSAR",
+        "descripcion": "Lechuga, fingers de pollo, queso, bacon, cherrys, picatostes y salsa césar.",
+        "precio": "11"
+    },
+    {
+        "nombre": "ENSALADA DE LA CASA",
+        "descripcion": "Hierba del parque de los patos",
+        "precio": "15"
+    }
+]
+
+    },
+    {
+        "nombre": "Hamburguesas",
+        "descripcion": "Todas nuestras hamburguesas están hechas a la brasa y vienen acompañadas de patatas fritas naturales.",
+        "platos": [
+            {
+                "nombre": "VACARNAL",
+                "descripcion": "Pan Brioche, carne de Black Angus 100%, pulled pork ahumado, crema de queso Cheddar, salsa BBQ y bacon crispy bites.",
+                "precio": "17"
+            },
+            {
+                "nombre": "GOTTAN",
+                "descripcion": "Vaca rubia gallega madurada, queso cheddar irish, picadillo de pepinillos, Fat Bacon macerado en sirope de Arce, mayo all star con jugo del bacon.",
+                "precio": "15"
+            },
+            {
+                "nombre": "HUEVO FRITO",
+                "descripcion": "Carne a la brasa, huevo frito, queso mozzarella, cebolla caramelizada y mayonesa Hellmann’s.",
+                "precio": "12"
+            },
+            {
+                "nombre": "DIABLA",
+                "descripcion": "Carne a la brasa, lechuga, tomate, cebolla caramelizada, queso, bacon y salsa rocoto.",
+                "precio": "12"
+            },
+            {
+                "nombre": "WILD",
+                "descripcion": "Carne a la brasa, lechuga, tomate, cebolla caramelizada, huevo frito, bacon, queso y mayonesa",
+                "precio": "13"
+            },
+            {
+                "nombre": "ANTICHUCHERA",
+                "descripcion": "Carne a la brasa, lechuga, tomate, patatas paja , queso, bacon, criolla y salsa anticuchera picante.",
+                "precio": "13"
+            },
+            {
+                "nombre": "BILBAO",
+                "descripcion": "Doble carne a la brasa, queso americano, queso mozzarella, doble bacon, salsa bbq, aros de cebolla crujientes y huevo frito.",
+                "precio": "18"
+            }
+        ]
+    },
+    {
+        "nombre": "Carnes a la Parrilla",
+        "descripcion": "Seleccion de los mejores platos carnicos de Bilbao.",
+        "platos": [
+            {
+                "nombre": "1/2 POLLO A LA BRASA",
+                "descripcion": "Acompañado de patatas fritas, ensalada y salsa típicas peruanas.",
+                "precio": "15"
+            },
+            {
+                "nombre": "1 POLLO A LA BRASA",
+                "descripcion": "Acompañado de patatas fritas, ensalada y salsa típicas peruanas.",
+                "precio": "28"
+            },
+            {
+                "nombre": "PICAÑA",
+                "descripcion": "300 grs. Corte de picaña a la brasa, patatas fritas y ensalada de la casa.",
+                "precio": "20"
+            },
+            {
+                "nombre": "CHULETA NEW YORK",
+                "descripcion": "1/2 kilo de chuleta a la brasa, acompañado de patatas fritas caseras y pimientos del país.",
+                "precio": "25"
+            },
+            {
+                "nombre": "1KG RIBS",
+                "descripcion": "Costillar de cerdo a la barbacoa acompañado de patatas fritas caseras.",
+                "precio": "26"
+            },
+            {
+                "nombre": "1/2KG RIBS",
+                "descripcion": "1/2 Costillar de cerdo a la barbacoa acompañado de patatas fritas caseras.",
+                "precio": "17"
+            },
+            {
+                "nombre": "COMBO CARNÍVORO (2 PERS.)",
+                "descripcion": "¡Disfruta en compañía de una perfecta selección de nuestros carnes! Incluye: Picaña de vacuno a la parrilla, entrecote, entraña, alitas chiferas, chorizo criollo y patatas fritas.",
+                "precio": "40"
+            },
+            {
+                "nombre": "PARRILLADA MIXTA (2 Pers.)",
+                "descripcion": "Costillas de cerdo, entrecote, picaña, chorizo criollo y pimientos del país.",
+                "precio": "36"
+            },
+            {
+                "nombre": "PARRILLADA MIXTA (4 Pers.)",
+                "descripcion": "1 pollo a la brasa, costillas, entrecote, picaña, chorizo criollo y pimientos del país.",
+                "precio": "57"
+            },
+            {
+                "nombre": "PARRILLADA ESPECIAL (4 Pers.)",
+                "descripcion": "500gr. de chuleta, costillas, 1/2 pollo, entrecote, picaña, chorizo criollo y pimientos del país.",
+                "precio": "68"
+            }
+        ]
+    },
+    {
+        "nombre": "Dulces",
+        "descripcion": "",
+        "platos": [
+            {
+                "nombre": "2 ALFAJORES CON MANJAR-BLANCO",
+                "descripcion": "",
+                "precio": "6"
+            },
+            {
+                "nombre": "CHEESECAKE DE MARACUYÁ",
+                "descripcion": "",
+                "precio": "7"
+            },
+            {
+                "nombre": "TARTA DE QUESO DE HORNO",
+                "descripcion": "",
+                "precio": "7"
+            },
+            {
+                "nombre": "TARTA TRES LECHE",
+                "descripcion": "",
+                "precio": "7"
+            }
+        ]
+    },
+    {
+        "nombre": "Cocktails",
+        "descripcion": "Seleccion de nuestros mejores cockteles",
+        "platos": [
+            {
+                "nombre": "Whisky Sour",
+                "descripcion": "Whisky, zumo de limón, azúcar, y clara de huevo.",
+                "precio": "12"
+            },
+            {
+                "nombre": "Manhattan",
+                "descripcion": "Whisky, vermut dulce, y angostura bitters.",
+                "precio": "11"
+            },
+            {
+                "nombre": "Mint Julep",
+                "descripcion": "Whisky, hojas de menta, azúcar, y agua.",
+                "precio": "10"
+            },
+            {
+                "nombre": "Irish Coffee",
+                "descripcion": "Whisky, café caliente, azúcar, y nata montada.",
+                "precio": "10"
+            },
+            {
+                "nombre": "Margarita",
+                "descripcion": "Tequila, zumo de lima, Cointreau, y sal.",
+                "precio": "13"
+            },
+            {
+                "nombre": "Mojito",
+                "descripcion": "Ron, azúcar, lima, menta, y soda.",
+                "precio": "10"
+            },
+            {
+                "nombre": "Piña Colada",
+                "descripcion": "Ron, crema de coco, y zumo de piña.",
+                "precio": "12"
+            },
+            {
+                "nombre": "Cosmopolitan",
+                "descripcion": "Vodka, Cointreau, zumo de arándano, y zumo de lima.",
+                "precio": "12"
+            },
+            {
+                "nombre": "Caipirinha",
+                "descripcion": "Cachaça, azúcar, y lima.",
+                "precio": "11"
+            },
+            {
+                "nombre": "Daiquiri",
+                "descripcion": "Ron, zumo de lima, y azúcar.",
+                "precio": "11"
+            },
+            {
+                "nombre": "Negroni",
+                "descripcion": "Ginebra, vermut dulce, y Campari.",
+                "precio": "13"
+            },
+            {
+                "nombre": "Bloody Mary",
+                "descripcion": "Vodka, zumo de tomate, zumo de limón, salsa Worcestershire, tabasco, sal y pimienta.",
+                "precio": "12"
+            }
+        ]
+    }
+]
