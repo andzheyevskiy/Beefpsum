@@ -241,6 +241,11 @@ body {
             margin: 5px;
             border-bottom: 1px solid black;
             text-align: center;
+            transition: transform 0.3s ease-in-out;
+
+            &:hover{
+                transform: scale(1.2);
+            }
 
             &:last-child {
                 border: none;
@@ -262,7 +267,7 @@ body {
             }
 
             &:hover {
-                font-size: 3.3rem;
+                transform: scale(1.7);
             }
         }
     }
@@ -926,14 +931,16 @@ footer {
                 margin: 0;
                 border: none;
                 animation: none;
+                transition: transform 0.3s ease-in-out;
+
+                &:hover{
+                    transform: scale(1.2);
+                }
             }
 
             & a {
                 font-size: 1.9rem;
 
-                &:hover {
-                    font-size: 2.2rem;
-                }
             }
         }
     }
