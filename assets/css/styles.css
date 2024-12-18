@@ -1,3 +1,8 @@
+html,
+body {
+    font-size: 14px;
+}
+
 @font-face {
     font-family: Chela-One-Regular;
     src: url(../fonts/ChelaOne-Regular.ttf);
@@ -113,6 +118,7 @@
     50% {
         content: "X";
     }
+
     100% {
         content: "X";
     }
@@ -166,7 +172,7 @@ body {
         border: none;
         background: none;
 
-        & label::before{
+        & label::before {
             content: "≡";
         }
 
@@ -180,16 +186,17 @@ body {
 
         &:checked {
 
-            &~button{
+            &~button {
                 animation: flip 0.3s ease-in-out forwards;
 
-                & label::before{
+                & label::before {
                     animation: flipMenu 0.3s ease-in-out forwards;
                 }
             }
 
             &~ul {
                 display: flex;
+                padding: 10px 0;
 
                 & li:nth-of-type(1) {
                     animation: slideMenu 0.5s ease-in;
@@ -243,7 +250,7 @@ body {
             text-align: center;
             transition: transform 0.3s ease-in-out;
 
-            &:hover{
+            &:hover {
                 transform: scale(1.2);
             }
 
@@ -311,7 +318,7 @@ header {
                 width: 100%;
                 padding: 30px 0;
                 font-family: var(--font2);
-                font-size: 1.8rem;
+                font-size: 1.6rem;
                 display: list-item;
 
                 &.mesa {
@@ -435,14 +442,14 @@ main {
 
         & div.contenedorImagen {
             width: 90%;
-            min-height: 375px;
+            min-height: 300px;
             margin: auto;
             position: relative;
 
             & img {
                 width: 100%;
                 position: sticky;
-                top: 10%;
+                top: 15%;
 
                 &:hover {
                     animation: shake 0.5s ease-in-out;
@@ -653,6 +660,13 @@ main {
                     width: 100%;
                     margin-top: 10px;
                     margin-bottom: 10px;
+                    padding: 10px 5px 0px 5px;
+                    background-color: var(--navColor);
+                    border-radius: 10px 10px 15% 15%;
+                    border-top: 20px orange solid;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
 
                     & h3 {
                         font-family: var(--font2);
@@ -682,7 +696,7 @@ main {
 
     /* <Localizacion> */
     & section.localization {
-        padding: 10px 50px;
+        padding: 10px 20px;
 
         & div.contenedor {
             display: flex;
@@ -707,13 +721,16 @@ main {
             text-align: center;
             font-family: var(--font1);
             font-size: 3rem;
-            margin: 15px auto;
+            margin: 0px auto 25px auto;
         }
 
         & p {
             font-family: var(--font2);
             font-size: 1.3rem;
             line-height: 1.4rem;
+            text-align: center;
+            line-height: 1.7rem;
+            margin-bottom: 25px;
         }
 
     }
@@ -909,6 +926,12 @@ footer {
 
 
 @media only screen and (min-width:768px) {
+
+    html,
+    body {
+        font-size: 16px;
+    }
+
     .navbar {
         background-color: var(--navColor);
         justify-content: space-between;
@@ -933,7 +956,7 @@ footer {
                 animation: none;
                 transition: transform 0.3s ease-in-out;
 
-                &:hover{
+                &:hover {
                     transform: scale(1.2);
                 }
             }
@@ -1022,6 +1045,7 @@ footer {
                 }
             }
         }
+
     }
 
     footer {
