@@ -104,26 +104,6 @@ body {
     }
 }
 
-@keyframes flip {
-    0% {
-        transform: scaleX(-1);
-    }
-
-    100% {
-        transform: scaleX(1);
-    }
-}
-
-@keyframes flipMenu {
-    50% {
-        content: "X";
-    }
-
-    100% {
-        content: "X";
-    }
-}
-
 :root {
     --navColor: rgba(254, 254, 254, 0.7);
     --mobile-nav: rgb(255, 255, 233, 0.7);
@@ -166,15 +146,54 @@ body {
     }
 
     & button {
-        font-size: 3rem;
-        font-weight: bold;
-        margin-right: 30px;
+        --bar-height: 6px;
+        --bar-rotation: 31deg;
+        --bar-duration: 0.5s ;
         border: none;
         background: none;
+        height: 55px;
+        width: 55px;
+        margin-right: 25px;
+        cursor: pointer;
+        
+        & div {
+            width: 100%;
+            height: auto;
+            display: inline-block;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
 
-        & label::before {
-            content: "≡";
+            & span.barra {
+                text-align: end;
+                width: 100%;
+                height: var(--bar-height);
+                background-color: black;
+                transform-origin: right;
+                transition: transform var(--bar-duration) ease-in-out;
+            }
+
+            & span.before {
+                content: "";
+                width: 100%;
+                height: var(--bar-height);
+                background-color: black;
+                transform-origin: top right;
+                transition: transform var(--bar-duration) ease-in-out, width var(--bar-duration) ease-in-out
+                ;
+            }
+
+            & span.after {
+                content: "";
+                width: 100%;
+                height: var(--bar-height);
+                background-color: black;
+                transform-origin: bottom right;
+                transition: transform var(--bar-duration) ease-in-out, width var(--bar-duration) ;
+            }
         }
+
 
         &:hover {
             cursor: pointer;
@@ -187,11 +206,25 @@ body {
         &:checked {
 
             &~button {
-                animation: flip 0.3s ease-in-out forwards;
 
-                & label::before {
-                    animation: flipMenu 0.3s ease-in-out forwards;
+                & div {
+
+                    & span.barra {
+                        transform: scaleX(0);
+                    }
+
+                    & span.before {
+                        width: 110%;
+                        transform: rotate(calc(-1 * var(--bar-rotation)));
+                    }
+
+                    & span.after {
+                        width: 110%;
+                        transform: rotate(var(--bar-rotation));
+                    }
                 }
+
+
             }
 
             &~ul {
@@ -246,12 +279,13 @@ body {
         & li {
             width: 100%;
             margin: 5px;
-            border-bottom: 1px solid black;
             text-align: center;
             transition: transform 0.3s ease-in-out;
+            padding-bottom: 10px;
 
             &:hover {
                 transform: scale(1.2);
+                border-bottom: none;
             }
 
             &:last-child {
@@ -316,10 +350,12 @@ header {
 
             & li {
                 width: 100%;
+                min-width: 200px;
                 padding: 30px 0;
                 font-family: var(--font2);
                 font-size: 1.6rem;
                 display: list-item;
+
 
                 &.mesa {
                     background-color: var(--pink);
@@ -330,19 +366,35 @@ header {
                 }
 
                 &.numero {
-                    background-color: rgba(255, 255, 255, 0.76);
+                    background-color: var(--pink);
 
                     & a {
-                        color: var(--pink);
+                        color: white;
                     }
                 }
 
                 & a {
                     text-decoration: none;
                     color: white;
+                    position: relative;
+                    padding: 10px 0;
+
+                    &::before {
+                        content: "";
+                        height: 2px;
+                        width: 0;
+                        background-color: white;
+                        position: absolute;
+                        bottom: 9px;
+                        left: 0;
+                        transition: width ease-in-out 0.3s;
+                    }
 
                     &:hover {
-                        text-decoration: underline;
+                        &::before {
+                            width: 100%;
+                        }
+
                     }
 
                     & img {
@@ -418,11 +470,15 @@ main {
                     font-weight: bold;
                     font-style: italic;
                     font-size: 1.5rem;
-                    transition: font-size 0.3s ease-in-out;
+                    transition: transform 0.3s ease-in-out;
 
                     &:hover {
-                        font-size: 2rem;
+                        transform: scale(1.25);
                     }
+                }
+
+                & p.descripcion {
+                    padding: 0 10px;
                 }
 
             }
@@ -452,7 +508,7 @@ main {
                 top: 15%;
 
                 &:hover {
-                    animation: shake 0.5s ease-in-out;
+                    animation: shake 0.5s ease-in-out infinite;
                 }
             }
 
@@ -556,6 +612,7 @@ main {
                     & a {
                         text-decoration: none;
                         color: white;
+                        position: relative;
 
                         &:hover {
                             text-decoration: underline;
@@ -803,14 +860,21 @@ main {
                 }
             }
 
-            & button {
+            & button[type="submit"] {
+                box-sizing: border-box;
                 margin: 20px 0;
                 padding: 12px;
-                border: none;
+                border: var(--pink) solid 2px;
                 border-radius: 10px;
                 background-color: var(--pink);
                 color: white;
                 font-size: 1.4rem;
+                opacity: 0.8;
+
+                &:hover {
+                    opacity: 1;
+                    border: #ffe4c4 solid 2px;
+                }
             }
         }
 
@@ -1112,6 +1176,7 @@ footer {
 
             & div.izquierda {
                 width: 50%;
+
             }
 
             & div.derecha {

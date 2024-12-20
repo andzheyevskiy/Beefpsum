@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurante Ipsum</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="shortcut icon" href="./assets/img/beef.svg" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
-
 </head>
 
 <body>
@@ -17,11 +17,17 @@
     <nav class="navbar">
         <a href="./index.html"><img src="./assets/img/logo.webp" alt="Logo Corporativo" id="logo"></a>
         <input type="checkbox" name="displayNav" id="displayNav">
-        <button id="boton-menu"><label for="displayNav"></label></button>
+        <button id="boton-menu"><label for="displayNav">
+                <div>
+                    <span class="before"></span>
+                    <span class="barra"></span>
+                    <span class="after"></span>
+                </div>
+            </label></button>
         <ul id="lista-menu">
             <li><a href="./index.html">Inicio</a></li>
             <li><a href="./carta.html">Carta</a></li>
-            <li><a href="./localization.html">Donde estamos</a></li>
+            <li><a href="./localization.html">Dónde estamos</a></li>
             <li><a href="./reservar.html">Reservar</a></li>
             <li><a href="#footer">Contacto</a></li>
         </ul>
@@ -34,8 +40,8 @@
         <img src="./assets/img/beef.svg" alt="Icono principal">
         <section>
             <ul>
-                <li class="mesa"><a href="./reservar">Reservar Mesa</a></li>
-                <li class="donde"><a href="./localization.html">Donde estamos</a></li>
+                <li class="mesa"><a href="./reservar.html">Reservar</a></li>
+                <li class="donde"><a href="./localization.html">Localización</a></li>
                 <li class="numero"><a href="tel:34999666999"> <img class="icon" src="./assets/img/phone-solid.svg"
                             alt="Telefono: "> 999 666 999</a></li>
             </ul>
@@ -52,8 +58,8 @@
                 <img src="./assets/img/parrilla-mixta.webp" alt="Imagen de plato de parilla mixto">
                 <div>
                     <h2>Parrilla mixta</h2>
-                    <p class="descripcion">Costillas de cerdo, entrecote, picaña, chorizo criollo y pimientos del
-                        país.</p>
+                    <p class="descripcion">Costillas de cerdo, entrecote, picaña, chorizo criollo y pimientos del país.
+                    </p>
                     <p class="precio">33 €</p>
                 </div>
             </article>
@@ -69,8 +75,8 @@
             <article>
                 <div>
                     <h2>Hamburguesa Vacarnal</h2>
-                    <p class="descripcion">Pan Brioche, carne de Black Angus 100%, pulled pork ahumado,
-                        crema de queso Cheddar, salsa BBQ y bacon crispy bites.</p>
+                    <p class="descripcion">Pan Brioche, carne de Black Angus 100%, pulled pork ahumado, crema de queso
+                        Cheddar, salsa BBQ y bacon crispy bites.</p>
                     <p class="precio">17 €</p>
                 </div>
                 <img src="./assets/img/hamburguesa-vacarnal.webp" alt="Imagen de hamburguesa vacarnal">
@@ -80,8 +86,7 @@
                 <div>
                     <h2>Hamburguesa Gottan</h2>
                     <p class="descripcion">Vaca rubia gallega madurada, queso cheddar irish, picadillo de pepinillos,
-                        Fat Bacon macerado en sirope de Arce,
-                        mayo all star con jugo del bacon</p>
+                        Fat Bacon macerado en sirope de Arce, mayo all star con jugo del bacon</p>
                     <p class="precio">15 €</p>
                 </div>
             </article>
@@ -127,7 +132,7 @@
                     <p>«Un lugar con un ambiente increíble, una decoración muy moderna y juvenil, buena música y, por
                         supuesto, buena comida.»</p>
                     <ul>
-                        <li class="mesa"><a href="./reservar">Reservar Mesa</a></li>
+                        <li class="mesa"><a href="./reservar.html">Reservar Mesa</a></li>
                         <li class="regalo"><a href="#">Tarjeta Regalo</a></li>
                     </ul>
                 </div>

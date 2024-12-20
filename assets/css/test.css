@@ -1,0 +1,25 @@
+& ul {
+    & li {
+        & a {
+
+            &::before {
+                content: "";
+                height: 2px;
+                width: 0;
+                background-color: white;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                transition: width ease-in-out 0.3s;
+            }
+
+            &:hover {
+                &::before {
+                    width: 100%;
+                }
+
+            }
+
+        }
+    }
+}
