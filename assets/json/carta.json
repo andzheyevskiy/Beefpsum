@@ -2,6 +2,7 @@
     {
         "nombre": "Entrantes",
         "descripcion": "",
+        "class": "entrantes",
         "platos": [
     {
         "nombre": "TACOS CARNÍVOROS",
@@ -74,6 +75,7 @@
     {
         "nombre": "Hamburguesas",
         "descripcion": "Todas nuestras hamburguesas están hechas a la brasa y vienen acompañadas de patatas fritas naturales.",
+        "class": "hamburguesa",
         "platos": [
             {
                 "nombre": "VACARNAL",
@@ -115,6 +117,7 @@
     {
         "nombre": "Carnes a la Parrilla",
         "descripcion": "Seleccion de los mejores platos carnicos de Bilbao.",
+        "class": "carnes",
         "platos": [
             {
                 "nombre": "1/2 POLLO A LA BRASA",
@@ -171,6 +174,7 @@
     {
         "nombre": "Dulces",
         "descripcion": "",
+        "class": "dulce",
         "platos": [
             {
                 "nombre": "2 ALFAJORES CON MANJAR-BLANCO",
@@ -197,6 +201,7 @@
     {
         "nombre": "Cocktails",
         "descripcion": "Seleccion de nuestros mejores cockteles",
+        "class": "cocktail",
         "platos": [
             {
                 "nombre": "Whisky Sour",

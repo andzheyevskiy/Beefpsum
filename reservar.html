@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurante Ipsum</title>
+    <title>Restaurante Ipsum - Reservar</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
@@ -29,9 +29,15 @@
             <li><a href="./carta.html">Carta</a></li>
             <li><a href="./localization.html">Dónde estamos</a></li>
             <li><a href="./reservar.html">Reservar</a></li>
-            <li><a href="#footer">Contacto</a></li>
+            <li id="labelForDisplayNav"><a href="#footer">Contacto</a></li>
         </ul>
+        <script>
+            document.getElementById("labelForDisplayNav").onclick = function () {
+                    document.getElementById("displayNav").checked = false
+            }
+        </script>
     </nav>
+
     <!-- </NavBar> -->
 
     <!-- <Main> -->
@@ -112,9 +118,6 @@
     </footer>
 
     <!-- </Footer> -->
-
-
-    <script src="./assets/js/script.js"></script>
 
 </body>
 

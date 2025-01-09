@@ -29,9 +29,15 @@
             <li><a href="./carta.html">Carta</a></li>
             <li><a href="./localization.html">Dónde estamos</a></li>
             <li><a href="./reservar.html">Reservar</a></li>
-            <li><a href="#footer">Contacto</a></li>
+            <li id="labelForDisplayNav"><a href="#footer">Contacto</a></li>
         </ul>
+        <script>
+            document.getElementById("labelForDisplayNav").onclick = function () {
+                    document.getElementById("displayNav").checked = false
+            }
+        </script>
     </nav>
+
     <!-- </NavBar> -->
 
     <!-- <Main> -->
@@ -86,9 +92,6 @@
     </footer>
 
     <!-- </Footer> -->
-
-
-    <script src="./assets/js/script.js"></script>
 
 </body>
 
